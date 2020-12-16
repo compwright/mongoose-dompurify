@@ -1,5 +1,10 @@
 # mongoose-dompurify
 
+[![Build Status](https://travis-ci.org/compwright/mongoose-dompurify.svg?branch=master)](https://travis-ci.org/compwright/mongoose-dompurify)
+[![Dependency Status](https://img.shields.io/david/compwright/mongoose-dompurify.svg?style=flat-square)](https://david-dm.org/compwright/mongoose-dompurify)
+[![Download Status](https://img.shields.io/npm/dm/mongoose-dompurify.svg?style=flat-square)](https://www.npmjs.com/package/mongoose-dompurify)
+[![Sponsor on GitHub](https://img.shields.io/static/v1?label=Sponsor&message=❤&logo=GitHub&link=https://github.com/sponsors/compwright)](https://github.com/sponsors/compwright)
+
 [DOMPurify](https://github.com/cure53/DOMPurify) plugin for Mongoose schemas that sanitizes documents before saving.
 
 ## Installation

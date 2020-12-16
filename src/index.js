@@ -35,7 +35,7 @@ const filterPhp = (str) => {
 module.exports = exports = function sanitizerPlugin (schema, options = {}) {
   const config = merge({}, defaults, options);
 
-  assert.ok(Array.isArray(config.skip), "'skip' must be an array");
+  assert.ok(Array.isArray(config.skip), '\'skip\' must be an array');
 
   debug('registering plugin on schema with options', config);
 
@@ -49,7 +49,7 @@ module.exports = exports = function sanitizerPlugin (schema, options = {}) {
     debug('running pre:save hook', doc);
 
     // Sanitize every node in tree
-    const sanitized = traverse(doc).map(function (node) {
+    traverse(doc).map(function (node) {
       const path = this.path.join('.');
       debug('checking', path);
 

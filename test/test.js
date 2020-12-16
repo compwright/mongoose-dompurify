@@ -2,7 +2,7 @@
 
 const should = require('chai').should();
 const mongoose = require('mongoose');
-const sanitizerPlugin = require('../lib/');
+const sanitizerPlugin = require('../src/');
 
 const OWASP_FILTER_EVASION = {
   /* eslint-disable */
@@ -254,7 +254,7 @@ const testDoc = new Test({
 
 describe('Mongoose Sanitizer Tests', () => {
   before(function(done) {
-    mongoose.connect('mongodb://localhost/test', { useMongoClient: true }, (err) => {
+    mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
       should.not.exist(err);
       done();
     });
